@@ -8,7 +8,7 @@ public class Solver : MonoBehaviour
 
 	public void getSolution(Action<string> callback) {
 		string info;
-		string output = SearchRunTime.solution(makeString(), out info,  buildTables: true);
+		string output = Search.solution(makeString(), out info);
 		callback(output);
 	}
 
